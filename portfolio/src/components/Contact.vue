@@ -3,22 +3,18 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>About</h2>
-            <p>A highly competent IT professional with a proven track record in building websites and managing databases. I have strong technical skills as well as excellent communication skills, enabling me to interact with a wide range of clients. I also mastering PHP, Python, Javascript, MySQL, PostgreSQL.</p>
-            
-            <router-link class="cta-btn" to="/contact">Availble for hire</router-link>
-
+            <h2>Contact</h2>
           </div>
         </div>
       </div>
     </div><!-- End Page Header -->
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="contact" class="contact">
       <div class="container">
 
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
+          <!-- <div class="col-lg-4">
             <img :src="require('@/assets/img/profile-img.jpg')" class="img-fluid" alt="">
           </div>
           <div class="col-lg-5 content">
@@ -53,7 +49,7 @@
               Recusandae est praesentium consequatur eos voluptatem. Vitae dolores aliquam itaque odio nihil. Neque ut neque ut quae voluptas. Maxime corporis aut ut ipsum consequatur. Repudiandae sunt sequi minus qui et. Doloribus molestiae officiis.
               Soluta eligendi fugiat omnis enim. Numquam alias sint possimus eveniet ad. Ratione in earum eum magni totam.
             </p>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -62,6 +58,6 @@
 
 <script>
 export default {
-    name : "About"
+    name : "Contact"
 }
 </script>

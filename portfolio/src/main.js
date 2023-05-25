@@ -5,7 +5,9 @@ import App from "./App.vue";
 
 const router = createRouter({
     history : createWebHistory(process.env.BASE_URL),
-    routes
+    routes,
+    linkActiveClass: "active",
+    linkExactActiveClass: "exact-active",
 })
 
 const app = createApp(App)

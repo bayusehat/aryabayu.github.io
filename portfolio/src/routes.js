@@ -7,21 +7,25 @@ export const routes = [
     {
         path : "/",
         name : "MyHome",
-        component : MyHome
+        component : MyHome,
+        // meta: { transition: 'slide-left' },
     },
     {
         path : "/about",
         name : "MyAbout",
-        component : MyAbout
+        component : MyAbout,
+        // meta: { transition: 'slide-left' },
     },
     {
         path : "/work",
         name : "MyWork",
-        component : MyWork
+        component : MyWork,
+        // meta: { transition: 'slide-left' },
     },
     {
         path : "/contact",
         name : "MyContact",
-        component : MyContact
+        component : MyContact,
+        // meta: { transition: 'slide-left' },
     }
 ]

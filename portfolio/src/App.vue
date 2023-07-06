@@ -3,18 +3,24 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <router-link to="/" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <i class="bi bi-code-slash"></i>
         <h1></h1>
-      </a>
+      </router-link>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><router-link  to="/">Home</router-link></li>
-          <li><router-link  to="/about">About</router-link></li>
-          <li><router-link  to="/work">Work</router-link></li>
+          <li>
+            <router-link  to="/">Home</router-link>
+          </li>
+          <li>
+            <router-link  to="/about">About</router-link>
+          </li>
+          <li>
+            <router-link  to="/work">Work</router-link>
+          </li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -30,7 +36,12 @@
     </div>
   </header><!-- End Header -->
 <!-- <main id="main" data-aos="fade" data-aos-delay="1500"> -->
-  <router-view />
+<router-view v-slot="{Component}">
+  <transition name="fade">
+    <component :is="Component"/>
+  </transition>
+</router-view>
+ 
 <!-- </main> -->
 <!-- End #main -->
 
@@ -90,5 +101,11 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>

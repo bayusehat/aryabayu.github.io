@@ -56,6 +56,13 @@ h6 {
   font-family: var(--font-primary);
 }
 
+.labels{
+  float: left;
+  color: #fafafa;
+  font-weight: bolder;
+  font-family: var(--font-primary) !important;
+  margin-top: 5%;
+}
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -119,7 +126,7 @@ h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.page-header .cta-btn {
+.page-header .cta-btn , .cta-btn-content{
   font-family: var(--font-primary);
   font-weight: 400;
   font-size: 14px;
@@ -133,7 +140,7 @@ h6 {
   background: var(--color-primary);
 }
 
-.page-header .cta-btn:hover {
+.page-header .cta-btn:hover, .cta-btn-content:hover {
   background: #2cbc85;
 }
 
